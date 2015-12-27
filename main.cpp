@@ -9,7 +9,7 @@
 #include <cassert>
 #include <sstream>
 #include <stdexcept>
-
+using namespace std;
 #include "LinkedList.h"
 
 int main()

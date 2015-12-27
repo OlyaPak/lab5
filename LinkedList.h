@@ -7,6 +7,7 @@
 #include <cstddef>           // size_t
 #include <initializer_list>  // std::initializer_list<T>
 #include <iosfwd>            // std::ostream
+using namespace std;
 
 typedef double Data;
 
@@ -52,7 +53,9 @@ public:
 private:
 	struct Node
 	{
-		// TODO: нужно самостоятельно определить структуру узла Node.
+	double value ;// TODO: нужно самостоятельно определить структуру узла Node.
+     Node* previous; //указатель  на следующий
+     Node* next;     //указатель на предыдущий
 	};
 
 private:
@@ -68,5 +71,8 @@ private:
 	void erase(const Node* node);
 
 private:
-	// TODO: нужно объявить данные-члены (поля) LinkedList.
+
+     Node* first;
+     Node* last;
+     size_t size_;             // TODO: нужно объявить данные-члены (поля) LinkedList.
 };
